@@ -267,7 +267,7 @@ Screenshots of the application interface and its capabilities.
 ### AI Code Editor
 
 ![KS-AIcodeEditor Editor](screenshots/page-0.png)
-![KS-AIcodeEditor Editor](screenshots/page-1.png)
+![KS-AIcodeEditor Editor](screenshots/project-1.png)
 
 ### AI Code Generation
 
@@ -283,7 +283,7 @@ Screenshots of the application interface and its capabilities.
 
 ### temes 
 
-![KS-AIcodeEditor Payment](screenshots/theme.png)
+![KS-AIcodeEditor Payment](screenshots/themes.png)
 
 ---
 
