@@ -260,26 +260,34 @@ Screenshots of the application interface and its capabilities.
 
 ![KS-AIcodeEditor Home](screenshots/home.png)
 
+
 ### Payment System
 
 ![KS-AIcodeEditor Payment](screenshots/create-project.png)
 
+
+
 ### AI Code Editor
 
 ![KS-AIcodeEditor Editor](screenshots/page-0.png)
+
 ![KS-AIcodeEditor Editor](screenshots/project-1.png)
+
 
 ### AI Code Generation
 
 ![KS-AIcodeEditor Editor](screenshots/page-2.png)
 
+
 ### Star a liked project
 
 ![KS-AIcodeEditor Editor](screenshots/starred.png)
 
+
 ### Payment System
 
 ![KS-AIcodeEditor Payment](screenshots/payment.png)
+
 
 ### temes 
 
