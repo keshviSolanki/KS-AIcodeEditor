@@ -1,25 +1,187 @@
 # KS-AIcodeEditor 🚀
-### AI-Powered Code Editor — Code Smarter, Build Faster
 
-KS-AIcodeEditor is an advanced, VS Code-inspired code editor integrated with AI capabilities. It combines a modern code-editing experience with intelligent code generation, allowing developers to describe what they want to build in natural language and generate code directly inside their development workspace.
+### Agentic AI & Generative AI Powered Code Editor
 
-Unlike a traditional code editor, KS-AIcodeEditor brings AI assistance into the coding workflow. Users can generate code using AI and automatically save the generated files into their selected project folders.
+**Code Smarter. Build Faster. Develop with AI.**
 
-It also includes a payment system to support premium features and subscription-based access.
+KS-AIcodeEditor is an AI-powered code editor inspired by modern development environments. It combines a developer-friendly coding experience with Generative AI capabilities to help developers generate code using natural-language instructions.
+
+The application allows users to describe their coding requirements, receive AI-generated code, and save generated files directly into their project workspace.
+
+The project explores the integration of **Generative AI, Large Language Models (LLMs), Agentic AI concepts, AI-powered workflows, backend automation, and microservices architecture** to improve developer productivity.
 
 ---
 
 ## ✨ Key Features
 
-- **AI Code Generation:** Generate code by describing requirements in natural language.
-- **VS Code-Inspired Editor:** A familiar coding experience with an integrated editor.
-- **Automatic File Saving:** Save AI-generated code directly into the project folder.
-- **Project-Based Development:** Organize generated code into files and folders.
-- **AI Integration:** Connect an AI model to generate code and assist development.
-- **RAG-Ready Architecture:** A retrieval workflow can provide relevant project context to the AI when implemented.
-- **Payment Integration:** Support premium features through a payment gateway.
-- **Backend Architecture:** Separate frontend and backend responsibilities for maintainability.
-- **Developer Productivity:** Reduce repetitive coding and accelerate development.
+- **AI Code Generation:** Generate code using natural-language prompts.
+- **Generative AI Integration:** Use LLMs to understand user requirements and generate code.
+- **AI-Assisted Development:** Get AI assistance for coding tasks.
+- **Code Editor:** Integrated code-editing experience.
+- **Automatic File Saving:** Save AI-generated code directly into project folders.
+- **Project Management:** Organize generated files and development projects.
+- **Microservices Architecture:** Separate backend responsibilities into independent services.
+- **API Gateway:** Centralized API communication using Express and `express-http-proxy`.
+- **Authentication:** User authentication and protected application functionality.
+- **Terminal Integration:** Backend terminal service integration.
+- **Payment System:** Payment integration for premium functionality.
+
+---
+
+## 🧠 AI Concepts & Engineering
+
+KS-AIcodeEditor explores how Generative AI and Agentic AI concepts can be applied to modern software development workflows.
+
+### 1. Generative AI (GenAI)
+
+Generative AI enables applications to create new content based on user instructions and learned patterns.
+
+In KS-AIcodeEditor, Generative AI is used for AI-powered code generation.
+
+**Key Concepts:**
+
+- Large Language Models (LLMs)
+- Prompt Engineering
+- Natural Language Understanding
+- Context-Aware Code Generation
+- AI API Integration
+- Structured AI Responses
+- Code Generation Workflows
+- LLM-Based Application Development
+
+**Workflow:**
+
+```mermaid
+flowchart TD
+    A["User Requirement"] --> B["Prompt Engineering"]
+    B --> C["Backend API"]
+    C --> D["LLM Provider"]
+    D --> E["AI Code Generation"]
+    E --> F["Generated Response"]
+    F --> G["Code Editor"]
+    G --> H["Save Generated Files"]
+```
+
+### 2. Agentic AI
+
+Agentic AI refers to AI systems that can work toward a goal through reasoning, planning, tool usage, and multi-step execution.
+
+KS-AIcodeEditor provides a foundation for exploring Agentic AI workflows in software development.
+
+**Important Agentic AI Concepts:**
+
+- AI Agents and Agent Architecture
+- Goal-Oriented Task Execution
+- Planning and Reasoning
+- Tool Calling and Function Calling
+- Multi-Step AI Workflows
+- Context Management
+- Agent Orchestration
+- Human-in-the-Loop Workflows
+- Error Handling and Execution Control
+
+**Conceptual Agentic AI Workflow:**
+
+```mermaid
+flowchart TD
+    A["User Coding Request"] --> B["AI Agent"]
+    B --> C["Understand User Goal"]
+    C --> D["Task Planning"]
+    D --> E{"Select Action"}
+    E -->|Generate Code| F["LLM"]
+    E -->|Read Project Files| G["File System Tool"]
+    E -->|Execute Task| H["Execution Tool"]
+    F --> I["Review Generated Output"]
+    G --> I
+    H --> I
+    I --> J{"Task Complete?"}
+    J -->|No| D
+    J -->|Yes| K["Return Result to User"]
+```
+
+### 3. Large Language Models (LLMs)
+
+LLMs are AI models trained on large amounts of text and code data to understand and generate human-like responses.
+
+KS-AIcodeEditor uses an AI model integration to process coding instructions and generate code.
+
+**Important Concepts:**
+
+- Tokens and Tokenization
+- Context Windows
+- System Prompts and User Prompts
+- Temperature and Model Parameters
+- Input and Output Tokens
+- Model API Integration
+- Response Processing
+- LLM Limitations and Hallucinations
+
+### 4. Retrieval-Augmented Generation (RAG)
+
+RAG combines information retrieval with Generative AI. It provides an LLM with relevant external information before generating a response.
+
+For a code editor, RAG can help an AI system understand existing project files, documentation, and code snippets.
+
+**RAG Concepts:**
+
+- Document and Code Ingestion
+- Text Chunking
+- Embedding Generation
+- Vector Databases
+- Semantic Search
+- Similarity Search
+- Context Retrieval
+- Augmented Prompt Construction
+
+**Conceptual RAG Workflow:**
+
+```mermaid
+flowchart TD
+    A["Project Files"] --> B["File Processing"]
+    B --> C["Chunking"]
+    C --> D["Embedding Model"]
+    D --> E["Vector Database"]
+
+    F["User Query"] --> G["Query Embedding"]
+    G --> H["Similarity Search"]
+    E --> H
+    H --> I["Relevant Context"]
+    I --> J["Augmented Prompt"]
+    J --> K["LLM"]
+    K --> L["Context-Aware Response"]
+```
+
+### 5. AI Tool Calling & Function Calling
+
+Tool calling allows an AI model or agent to request external functions to perform specific tasks.
+
+Possible applications in an AI code editor include:
+
+- Reading project files.
+- Creating new files.
+- Updating existing code.
+- Searching project documentation.
+- Running development commands.
+- Analyzing code errors.
+
+Tool execution must be validated and controlled by the backend before performing operations.
+
+### 6. AI Workflow Orchestration
+
+AI workflow orchestration manages multiple steps involved in completing a task.
+
+Important concepts include:
+
+- Sequential AI Workflows
+- Conditional Execution
+- Task Planning
+- Agent State Management
+- Tool Selection
+- Retry and Error Handling
+- Human Approval
+- Workflow Monitoring
+
+These concepts provide a foundation for building more advanced Agentic AI development assistants.
 
 ---
 
@@ -27,105 +189,183 @@ It also includes a payment system to support premium features and subscription-b
 
 | Category | Technologies |
 |---|---|
-| Frontend | React.js, JavaScript |
-| Code Editor | Monaco Editor (if used in the current implementation) |
+| Frontend | React.js, JavaScript, Vite |
+| Code Editor | Monaco Editor |
 | Backend | Node.js, Express.js |
-| Database | MongoDB |
-| AI Integration | AI API / LLM provider |
+| Architecture | Microservices |
 | API Gateway | Express.js, express-http-proxy |
-| Authentication | JWT (if enabled) |
-| Payment | Integrated payment gateway |
+| Database | MongoDB |
+| Authentication | JWT |
+| AI Integration | AI APIs / LLM Provider |
+| AI Concepts | GenAI, Agentic AI, Prompt Engineering |
+| Payment | Payment Gateway |
+| Deployment | Render |
 | Development Tools | Git, GitHub, VS Code |
-| Deployment | Docker / Cloud services (if configured) |
 
 ---
 
-## 🧠 How KS-AIcodeEditor Works
+## 🏗️ System Architecture
 
-The main idea is simple:
+KS-AIcodeEditor follows a service-based backend architecture that separates application responsibilities.
 
-1. A user opens the code editor.
-2. The user describes the code they want to generate.
-3. The frontend sends the prompt to the backend.
+```mermaid
+flowchart TD
+    A["React Frontend"] --> B["API Gateway"]
+    B --> C["Authentication Service"]
+    B --> D["Project Service"]
+    B --> E["Terminal Service"]
+    B --> F["Other Backend Services"]
+
+    C --> G["MongoDB"]
+    D --> G
+    E --> G
+
+    B --> H["AI Code Generation Workflow"]
+    H --> I["LLM Provider"]
+    I --> H
+    H --> A
+```
+
+### Architecture Components
+
+| Component | Responsibility |
+|---|---|
+| Frontend | User interface and code editor |
+| API Gateway | Centralized API routing |
+| Authentication Service | User authentication |
+| Project Service | Project and file management |
+| Terminal Service | Terminal-related operations |
+| AI Integration | AI-powered code generation |
+| Database | Application data storage |
+
+---
+
+## ⚙️ How KS-AIcodeEditor Works
+
+1. The user opens the application.
+2. The user enters a coding requirement using a natural-language prompt.
+3. The frontend sends the request to the backend through the API Gateway.
 4. The backend communicates with the configured AI model.
 5. The AI generates the requested code.
-6. The generated code is returned to the editor.
-7. The application saves the generated code into the selected project folder.
-
-### AI Code Generation Workflow
-
-```mermaid
-flowchart TD
-    A["User"] --> B["KS-AIcodeEditor"]
-    B --> C["Enter AI Prompt"]
-    C --> D["Frontend API Request"]
-    D --> E["Backend API"]
-    E --> F["AI Model / LLM"]
-    F --> G["Generated Code"]
-    G --> H["Return Response"]
-    H --> I["Code Editor"]
-    I --> J["Save Generated File"]
-    J --> K["Project Folder"]
-```
+6. The generated response is returned to the frontend.
+7. The user can save the generated code into the selected project folder.
 
 ---
 
-## 🔍 RAG Architecture
+## 📸 Project Screenshots
 
-Retrieval-Augmented Generation (RAG) is a technique that provides an AI model with relevant external context before it generates a response.
+Screenshots of the application interface and its capabilities.
 
-For a code editor, a RAG workflow can retrieve relevant project files, code snippets, documentation, or previous context to help the AI generate code that fits the existing project.
+### Home Screen
 
-### RAG Workflow Diagram
+![KS-AIcodeEditor Home](screenshots/home.png)
 
-```mermaid
-flowchart TD
-    A["User Prompt"] --> B["Backend"]
-    B --> C["Query Processing"]
-    C --> D["Embedding Model"]
-    D --> E["Vector Database"]
-    E --> F["Retrieve Relevant Context"]
-    F --> G["Build Augmented Prompt"]
-    G --> H["LLM / AI Model"]
-    H --> I["Generated Code"]
-    I --> J["Editor"]
-    J --> K["Save Files"]
-    
-    L["Project Files / Documentation"] --> M["Document Processing"]
-    M --> N["Chunking"]
-    N --> O["Embedding Generation"]
-    O --> E
-```
+### Payment System
 
-**Important:** This diagram describes a RAG architecture. Keep it as an implemented feature only if your application actually performs document processing, embedding generation, vector storage, and retrieval. Otherwise, treat it as a planned extension.
+![KS-AIcodeEditor Payment](screenshots/create-project.png)
+
+### AI Code Editor
+
+![KS-AIcodeEditor Editor](screenshots/page-0.png)
+![KS-AIcodeEditor Editor](screenshots/page-1.png)
+
+### AI Code Generation
+
+![KS-AIcodeEditor Editor](screenshots/page-2.png)
+
+### Star a liked project
+
+![KS-AIcodeEditor Editor](screenshots/starred.png)
+
+### Payment System
+
+![KS-AIcodeEditor Payment](screenshots/payment.png)
+
+### temes 
+
+![KS-AIcodeEditor Payment](screenshots/theme.png)
 
 ---
 
-## 💳 Payment System Workflow
+## ☁️ Deployment on Render
 
-KS-AIcodeEditor includes a payment system for managing access to premium functionality.
+The project has been configured for deployment using Render, with separate services for the frontend and backend microservices.
 
-```mermaid
-flowchart TD
-    A["User"] --> B["Select Premium Plan"]
-    B --> C["Frontend"]
-    C --> D["Backend Payment API"]
-    D --> E["Payment Gateway"]
-    E --> F{"Payment Successful?"}
-    F -->|Yes| G["Verify Payment"]
-    G --> H["Update User Subscription"]
-    H --> I["Enable Premium Access"]
-    F -->|No| J["Payment Failed"]
-    J --> K["Show Error Message"]
+### Backend Services
+
+| Service | Deployment URL |
+|---|---|
+| Gateway | https://ks-aicodeeditor-gateway.onrender.com |
+| Auth Service | https://ks-aicodeeditor-auth.onrender.com |
+| Project Service | https://ks-aicodeeditor-project.onrender.com |
+| Terminal Service | https://ks-aicodeeditor-terminal.onrender.com |
+
+### Deployment Challenges & Troubleshooting
+
+During deployment, I encountered several challenges while configuring the frontend and backend microservices on Render.
+
+#### 1. Frontend Build Error — ENOENT
+
+```text
+npm error code ENOENT
+npm error syscall open
+npm error path /opt/render/project/src/package.json
+npm error enoent Could not read package.json
 ```
 
-Payment verification should happen on the backend before premium access is granted.
+**Cause:** Render could not locate the frontend `package.json` because the frontend application is inside a separate directory.
+
+**Required configuration:**
+- Root Directory: `frontend`
+- Build Command: `npm install && npm run build`
+- Publish Directory: `dist`
+
+#### 2. Redis Connection Error
+
+```text
+ioredis ECONNREFUSED
+```
+
+**Cause:** The deployed service could not establish a connection to the configured Redis server.
+
+#### 3. Gateway Error — 502 Bad Gateway
+
+```text
+POST /api/auth/login
+502 Bad Gateway
+```
+
+**Cause:** The Gateway could not successfully complete the request to the authentication service.
+
+#### 4. Authentication Error — 401 Unauthorized
+
+```text
+GET /api/project
+401 Unauthorized
+
+GET /api/me
+401 Unauthorized
+```
+
+**Cause:** Authentication or session handling was not working correctly in the deployed environment.
+
+### Current Deployment Status
+
+Deployment and integration issues are still being investigated.
+
+Areas requiring attention include:
+
+- Redis connectivity between deployed services.
+- Gateway-to-microservice communication.
+- Authentication and session management.
+- Frontend environment variable configuration.
+- Production environment configuration.
+
+Documenting these challenges is part of understanding real-world cloud deployment, backend debugging, and microservices integration.
 
 ---
 
 ## 📁 Project Structure
-
-The following is a suggested structure. Adjust it to match the actual folders in your repository.
 
 ```text
 KS-AIcodeEditor/
@@ -134,16 +374,20 @@ KS-AIcodeEditor/
 │   ├── src/
 │   │   ├── components/
 │   │   ├── pages/
-│   │   ├── services/
 │   │   └── ...
 │   └── package.json
 │
 ├── backend/
+│   ├── gateway/
 │   ├── services/
-│   ├── config/
-│   ├── routes/
-│   ├── controllers/
 │   └── package.json
+│
+├── screenshots/
+│   ├── home.png
+│   ├── editor.png
+│   ├── ai-code-generation.png
+│   ├── login-page.png
+│   └── payment-system.png
 │
 ├── .gitignore
 └── README.md
@@ -151,7 +395,7 @@ KS-AIcodeEditor/
 
 ---
 
-## ⚙️ Installation & Setup
+## 🚀 Installation & Setup
 
 ### 1. Clone the Repository
 
@@ -165,82 +409,75 @@ git clone https://github.com/keshviSolanki/KS-AIcodeEditor.git
 cd KS-AIcodeEditor
 ```
 
-### 3. Install Dependencies
-
-Install dependencies separately in the frontend and backend directories:
+### 3. Install Frontend Dependencies
 
 ```bash
 cd frontend
 npm install
 ```
+
+### 4. Install Backend Dependencies
 
 ```bash
 cd ../backend
 npm install
 ```
 
-### 4. Configure Environment Variables
+### 5. Configure Environment Variables
 
-Create `.env` files in the required frontend and backend directories.
+Create the required `.env` files in the frontend and backend service directories.
 
-Example configuration:
+Example backend configuration:
 
 ```env
-# Backend
 PORT=8000
 MONGODB_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 AI_API_KEY=your_ai_api_key
-
-# Payment configuration
-PAYMENT_KEY_ID=your_payment_key
-PAYMENT_KEY_SECRET=your_payment_secret
 ```
 
-Use the actual variable names required by your source code. Never commit real API keys, passwords, database credentials, or payment secrets.
+Use the actual environment variable names required by your source code.
 
-### 5. Start the Application
+### 6. Start the Application
 
-Start the backend:
+Start the backend services using their respective development scripts.
 
-```bash
-cd backend
-npm run dev
-```
-
-Start the frontend in another terminal:
+Start the frontend in a separate terminal:
 
 ```bash
 cd frontend
 npm run dev
 ```
 
-Check the individual `package.json` scripts if your project uses different commands.
-
 ---
 
 ## 🔐 Security
 
-- Keep API keys and credentials in environment variables.
-- Never expose payment secrets in frontend code.
-- Verify payment transactions on the backend.
-- Validate user input and API requests.
+- Store API keys and credentials in environment variables.
+- Never expose private AI API keys in frontend code.
 - Protect authenticated routes.
-- Never commit `.env` files or private service-account credentials.
+- Validate incoming API requests.
+- Verify payment transactions on the backend.
+- Validate file-system operations.
+- Never commit `.env` files or private credentials.
 
 ---
 
 ## 🚀 Future Improvements
 
+- Agentic AI coding assistant.
+- Multi-agent development workflows.
 - AI-powered debugging and error explanations.
 - Multi-file code generation.
 - Project-wide code understanding.
 - RAG-based codebase retrieval.
 - AI-powered code refactoring.
-- Git integration inside the editor.
+- Function calling and external tool integration.
+- Intelligent task planning and execution.
 - Multiple AI model support.
+- Git integration inside the editor.
 - Real-time collaborative coding.
-- Advanced code completion.
+- Improved cloud deployment and service monitoring.
 
 ---
 
