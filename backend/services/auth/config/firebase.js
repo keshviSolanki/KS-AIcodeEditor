@@ -1,8 +1,12 @@
 import { cert, initializeApp } from "firebase-admin";
-import serviceAccount from "../serviceAccountKey.json" with {type:"json"}
+import fs from "fs";
 
-export const app=initializeApp(
-    {
-        credential:cert(serviceAccount)
-    }
-)
+const serviceAccountPath = process.env.RENDER
+  ? "/etc/secrets/serviceAccountKey.json"
+  : new URL("../serviceAccountKey.json", import.meta.url);
+
+const serviceAccount = JSON.parse(fs.readFileSync(serviceAccountPath, "utf8"));
+
+export const app = initializeApp({
+  credential: cert(serviceAccount),
+});
