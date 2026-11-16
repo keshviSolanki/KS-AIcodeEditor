@@ -312,51 +312,6 @@ The project has been configured for deployment using Render, with separate servi
 
 During deployment, I encountered several challenges while configuring the frontend and backend microservices on Render.
 
-#### 1. Frontend Build Error — ENOENT
-
-```text
-npm error code ENOENT
-npm error syscall open
-npm error path /opt/render/project/src/package.json
-npm error enoent Could not read package.json
-```
-
-**Cause:** Render could not locate the frontend `package.json` because the frontend application is inside a separate directory.
-
-**Required configuration:**
-- Root Directory: `frontend`
-- Build Command: `npm install && npm run build`
-- Publish Directory: `dist`
-
-#### 2. Redis Connection Error
-
-```text
-ioredis ECONNREFUSED
-```
-
-**Cause:** The deployed service could not establish a connection to the configured Redis server.
-
-#### 3. Gateway Error — 502 Bad Gateway
-
-```text
-POST /api/auth/login
-502 Bad Gateway
-```
-
-**Cause:** The Gateway could not successfully complete the request to the authentication service.
-
-#### 4. Authentication Error — 401 Unauthorized
-
-```text
-GET /api/project
-401 Unauthorized
-
-GET /api/me
-401 Unauthorized
-```
-
-**Cause:** Authentication or session handling was not working correctly in the deployed environment.
-
 ### Current Deployment Status
 
 Deployment and integration issues are still being investigated.
